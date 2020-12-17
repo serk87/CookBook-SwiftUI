@@ -12,11 +12,11 @@
 		9B4E16E7258B6E440079AF28 /* CookBook WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B4E16E6258B6E440079AF28 /* CookBook WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9B4E16EC258B6E440079AF28 /* CookBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E16EB258B6E440079AF28 /* CookBookApp.swift */; };
 		9B4E16EE258B6E440079AF28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E16ED258B6E440079AF28 /* ContentView.swift */; };
-		9B4E16F0258B6E440079AF28 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E16EF258B6E440079AF28 /* NotificationController.swift */; };
-		9B4E16F2258B6E440079AF28 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E16F1258B6E440079AF28 /* NotificationView.swift */; };
 		9B4E16F4258B6E440079AF28 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E16F3258B6E440079AF28 /* ComplicationController.swift */; };
 		9B4E16F6258B6E450079AF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E16F5258B6E450079AF28 /* Assets.xcassets */; };
 		9B4E16F9258B6E450079AF28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E16F8258B6E450079AF28 /* Preview Assets.xcassets */; };
+		9B4E1710258B80870079AF28 /* ListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E170F258B80870079AF28 /* ListSwiftUIView.swift */; };
+		9B4E1715258B87D30079AF28 /* DetailSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E1714258B87D30079AF28 /* DetailSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +69,13 @@
 		9B4E16E6258B6E440079AF28 /* CookBook WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CookBook WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4E16EB258B6E440079AF28 /* CookBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookApp.swift; sourceTree = "<group>"; };
 		9B4E16ED258B6E440079AF28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9B4E16EF258B6E440079AF28 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		9B4E16F1258B6E440079AF28 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		9B4E16F3258B6E440079AF28 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		9B4E16F5258B6E450079AF28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B4E16F8258B6E450079AF28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9B4E16FA258B6E450079AF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4E16FB258B6E450079AF28 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9B4E170F258B80870079AF28 /* ListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwiftUIView.swift; sourceTree = "<group>"; };
+		9B4E1714258B87D30079AF28 /* DetailSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,8 @@
 			children = (
 				9B4E16EB258B6E440079AF28 /* CookBookApp.swift */,
 				9B4E16ED258B6E440079AF28 /* ContentView.swift */,
-				9B4E16EF258B6E440079AF28 /* NotificationController.swift */,
-				9B4E16F1258B6E440079AF28 /* NotificationView.swift */,
+				9B4E170F258B80870079AF28 /* ListSwiftUIView.swift */,
+				9B4E1714258B87D30079AF28 /* DetailSwiftUIView.swift */,
 				9B4E16F3258B6E440079AF28 /* ComplicationController.swift */,
 				9B4E16F5258B6E450079AF28 /* Assets.xcassets */,
 				9B4E16FA258B6E450079AF28 /* Info.plist */,
@@ -267,11 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B4E16F0258B6E440079AF28 /* NotificationController.swift in Sources */,
 				9B4E16EE258B6E440079AF28 /* ContentView.swift in Sources */,
 				9B4E16F4258B6E440079AF28 /* ComplicationController.swift in Sources */,
+				9B4E1715258B87D30079AF28 /* DetailSwiftUIView.swift in Sources */,
 				9B4E16EC258B6E440079AF28 /* CookBookApp.swift in Sources */,
-				9B4E16F2258B6E440079AF28 /* NotificationView.swift in Sources */,
+				9B4E1710258B80870079AF28 /* ListSwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
